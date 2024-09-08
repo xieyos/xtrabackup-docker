@@ -43,8 +43,8 @@ echo
 echo "Databases backed up successfully to: $THISBACKUP"
 
 # Cleanup
-echo "delete tar files of 10 days ago"
-find $BASE_DIR/ -mtime +10 -name "*.tar.gz"  -exec rm -rf {} \;
+echo "delete tar files of 60 days ago"
+find $BASE_DIR/ -mtime +60 -name "*.tar.gz"  -exec rm -rf {} \;
 
 echo
 echo "completed: `date '+%Y-%m-%d %H:%M:%S'`"
